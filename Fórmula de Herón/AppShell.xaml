@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Fórmula_de_Herón.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Fórmula_de_Herón"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Fórmula de Herón"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+</Shell>

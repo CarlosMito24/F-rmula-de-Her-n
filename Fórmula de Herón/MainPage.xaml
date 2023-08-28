@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fórmula_de_Herón.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="#050324" Margin="10">
+            <Border WidthRequest="400"
+                    StrokeShape="RoundRectangle 20, 20, 20, 20"
+                    Margin="10, 10, 10, 10">
+                <Image Source="triangulo.png"/>
+            </Border>
+
+            <Label Margin="10" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"
+                   Text="Digita la medida del primer lado del triángulo:"/>
+
+            <Entry x:Name="lado1" 
+                   Margin="10" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Margin="10" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"
+                   Text="Digita la medida del segundo lado del triángulo:"/>
+
+            <Entry x:Name="lado2" 
+                   Margin="10" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Margin="10" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"
+                   Text="Digita la medida del tercer lado del triángulo:"/>
+
+            <Entry x:Name="lado3" 
+                   Margin="10" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"/>
+
+            <Button Text="Calcular área del triángulo"
+                    TextColor="White"
+                    Clicked="OnButtonClicked"
+                    Margin="10"
+                    BackgroundColor="#e6b209"
+                    FontAttributes="Bold"
+                    CornerRadius="25"/>
+
+            <Label Margin="10" 
+                   x:Name="label1"
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"
+                   Text="El área de la triángulo es:"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
